@@ -1,11 +1,8 @@
 ﻿Console.WriteLine("Введи числа для массива");
 int [] array = new int[8];
-array [0] = Convert.ToInt32(Console.ReadLine());
-array [1] = Convert.ToInt32(Console.ReadLine());
-array [2] = Convert.ToInt32(Console.ReadLine());
-array [3] = Convert.ToInt32(Console.ReadLine());
-array [4] = Convert.ToInt32(Console.ReadLine());
-array [5] = Convert.ToInt32(Console.ReadLine());
-array [6] = Convert.ToInt32(Console.ReadLine());
-array [7] = Convert.ToInt32(Console.ReadLine());
+for (int i = 0; i < array.Length; i++)
+{
+  array [i] = Convert.ToInt32(Console.ReadLine());
+}
+
 Console.WriteLine("[" + string.Join(", ", array) + "]");
